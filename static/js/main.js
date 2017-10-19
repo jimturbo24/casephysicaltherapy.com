@@ -1,12 +1,12 @@
 $(function(){
 
-    $('.hamburger').click(function() {
+    $('.menuIcon').click(function() {
       $('#topNav').toggleClass('responsive')
     });
 
-    $('.navLink').click(function() {
-      $('#topNav').children().removeClass('current-page');
-      $(this).addClass('current-page');
+    $('.navLink').each(function() {
+        if ($(this).prop('href') == window.location.href) {
+          $(this).addClass('current-page');
+        }
     });
-
 });
