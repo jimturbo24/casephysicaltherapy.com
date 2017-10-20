@@ -25,11 +25,7 @@
       </nav>
     </div>
   </div>
-{{ if eq $.Type "pages" }}
-  <div class="banner">
-    <h3>{{ .Params.heading }}</h3>
-  </div>
-{{ else }}
+
   <div class="bannerLandingPage">
     <div class="bannerWrap">
       <h1>Getting you back to doing what you love</h1>
@@ -37,4 +33,5 @@
     </div>
   </div>
 {{ end }}
+  <h1>{{ .Type }}</h1>
 </header>
