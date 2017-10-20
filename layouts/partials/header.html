@@ -25,13 +25,17 @@
       </nav>
     </div>
   </div>
-
+{{ if .IsHome }}
   <div class="bannerLandingPage">
     <div class="bannerWrap">
       <h1>Getting you back to doing what you love</h1>
       <a href="/about/" class="button">meet our team</a>
     </div>
   </div>
-
-
+{{ else }}
+  <div class="banner">
+    <h3>{{ .Params.heading }}</h3>
+  </div>
+{{ end }}
+  <h1>{{ .Type }}</h1>
 </header>
