@@ -2,23 +2,15 @@
 <html>
   {{ partial "head" . }}
 
-  <style>
-    .content {
-      max-width: 800px;
-      margin: auto;
-    }
-
-    .content h2 {
-      text-align: center;
-    }
-  </style>
   <body>
 
     {{ partial "header" . }}
 
-    <div class="content">
+    {{ partial "services/services" . }}
+
+    <!-- <div class="content">
       {{ .Content }}
-    </div>
+    </div> -->
 
     {{ partial "footer" . }}
 
