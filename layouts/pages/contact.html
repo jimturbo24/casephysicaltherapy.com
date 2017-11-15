@@ -6,7 +6,65 @@
 
     {{ partial "header" . }}
 
-    {{ partial "contact/contact" . }}
+    <section class="contactPage">
+      <h3>take the next step in your recovery</h3>
+      <div class="infoWrap">
+        <div class="contentWrap">
+          <div class="iconBox">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+          </div>
+          <div>
+            <address>5757 Woodway, Suite 140 <br> Houston, TX.  77057</address>
+          </div>
+        </div>
+        <div class="contentWrap">
+          <div class="iconBox">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+          </div>
+          <div>
+            <a href="tel:+1-713-840-8100">(713) 840-8100</a>
+          </div>
+        </div>
+        <div class="contentWrap">
+          <div class="iconBox">
+            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+          </div>
+          <div>
+            <a href="mailto:casephysicaltherapy@gmail.com">casephysicaltherapy@gmail.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="requestWrap">
+        <form action="index.html" method="post">
+          <h4>Send us a message</h4>
+          <div>
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="user_email">
+          </div>
+          <div>
+            <label for="telephone">Telephone</label>
+            <input type="tel" id="telephone" name="user_telephone">
+          </div>
+          <div>
+            <label for="msg">Message</label>
+            <textarea id="msg" name="user_message"></textarea>
+          </div>
+          <div>
+            <button type="submit">Send</button>
+          </div>
+        </form>
+        <div class="mapBox">
+          <h4>visit us</h4>
+          <p>Our building is located between Bering Dr and Augusta Dr, next to the Cyclone Anaya Mexican Kitchen. There is some parking out front off of Woodway, but the main parking garage is located behind the building. The entrance to parking garage is off Augusta, next to the MW Cleaners.</p>
+          <hr>
+          <iframe class="map" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=5757%20Woodway%2C%20Suite%20140%20Houston%2C%20TX.%20%2077057&key=AIzaSyBFSmOv7YQ4tyxwP87dNHdhnqZgMu1ET2g" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
 
     <!-- <div class="content">
       {{ .Content }}

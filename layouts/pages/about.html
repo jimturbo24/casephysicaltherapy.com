@@ -6,11 +6,44 @@
 
     {{ partial "header" . }}
 
-    {{ partial "about/about" . }}
-
-    {{ partial "about/staff" . }}
-
-    {{ partial "about/blurp" . }}
+    <section class="about-intro">
+      <div class="aboutWrap">
+        <h3>therapy with a kind face and a human touch</h3>
+        <div class="aboutBox">
+          <img src="/images/clinic.jpg" alt="Case Physical Therapy Clinic" title="Case Physical Therapy Clinic">
+          <p>Case Physical Therapy, Inc. was established in 1995 and is located in the Galleria area. We are a small, private practice clinic, with two licensed physical therapists to help meet your specific needs. Our primary goal is to utilize the latest treatment methods and techniques to return the patient back to a level of functional activity as soon as possible.  A wide range of patients are treated at Case Physical Therapy:  surgical and non-surgical orthopedic patients,  high school athletes, professional athletes, as well as, those active weekend athletes.  An overall posture and balance assessment is performed during each visit to minimize compensatory movements.</p>
+        </div>
+      </div>
+    </section>
+    <section class="about-staff">
+      <div class="widthWrap">
+        <h3>our experienced team</h3>
+        <div class="staffWrap">
+          <div class="memberBox">
+            <img class="img-1" src="/images/Bill_Case.jpg" alt="Bill Case Physical Therapist" title="Bill Case">
+            <h4>Bill Case</h4>
+            <p>After graduating from UTMB in 1982, Bill began practicing and now has over 35 years of experience as a Physical Therapist.</p>
+            <a href="#">read more</a>
+          </div>
+          <div class="memberBox">
+            <img class="img-1" src="/images/Bill_Case.jpg" alt="Bill Case Physical Therapist" title="Bill Case">
+            <h4>Isabel Young</h4>
+            <p>Isabel has over 15 years of experience as a Physical Thersapist. Originally from Panama, she has lived in Houston since 2002</p>
+            <a href="#">read more</a>
+          </div>
+          <div class="memberBox">
+            <img class="img-1" src="/images/Bill_Case.jpg" alt="Bill Case Physical Therapist" title="Bill Case">
+            <h4>Danienne Gatti</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a href="#">read more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about-blurp">
+      <h3>Our goal is to create a positive rehabilitative experience for each patient because we realize that your time is important and you have a choice where to receive your physical therapy</h3>
+      <a href="#" class="button">make an appointment</a>
+    </section>
 
     {{ partial "footer" . }}
 
