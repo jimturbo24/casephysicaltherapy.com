@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  {{ partial "head" . }}
+
+  <body>
+
+    {{ partial "header" . }}
+
+    <section class="about-individuals">
+      <div class="individualImage">
+        <img src="{{.Params.img_src}}" alt="{{.Params.img_alt}}">
+      </div>
+      <div class="individualContent">
+        <h2>Meet {{.Params.name}}</h2>
+        <div class="text-featured">
+          {{.Content}}
+        </div>
+      </div>
+
+    </section>
+    <section class="about-blurp contrast">
+      <h3>Our goal is to create a positive rehabilitative experience for each patient because we realize that your time is important and you have a choice where to receive your physical therapy</h3>
+      <a href="#" class="button">make an appointment</a>
+    </section>
+
+    {{ partial "footer" . }}
+
+    <!-- <div class="content">
+    </div> -->
+
+    <script type="text/javascript" src="/js/main.js"></script>
+
+  </body>
+</html>
