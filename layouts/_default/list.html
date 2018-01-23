@@ -6,7 +6,7 @@
   </head>
   <body>
     <h3>This is the default list page</h3>
-    {{range .Paginator.Pages}}
+    {{range .Data.Pages}}
       <div class="memberBox">
         <h4>{{.Params.name}}</h4>
         <a href="{{.URL}}" class="button">click</a>
