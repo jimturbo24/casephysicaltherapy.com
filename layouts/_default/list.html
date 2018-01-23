@@ -1,47 +1,16 @@
 <!DOCTYPE html>
 <html>
-  {{ partial "head" . }}
-
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
   <body>
-
-    {{ partial "header" . }}
-
-    <section class="about-intro">
-      <div class="aboutWrap">
-        <h3>therapy with a kind face and a human touch</h3>
-        <div class="aboutBox">
-          <img src="/images/clinic.jpg" alt="Case Physical Therapy Clinic" title="Case Physical Therapy Clinic">
-          <p>Case Physical Therapy, Inc. was established in 1995 and is located in the Galleria area. We are a small, private practice clinic, with two licensed physical therapists to help meet your specific needs. Our primary goal is to utilize the latest treatment methods and techniques to return the patient back to a level of functional activity as soon as possible.  A wide range of patients are treated at Case Physical Therapy:  surgical and non-surgical orthopedic patients,  high school athletes, professional athletes, as well as, those active weekend athletes.  An overall posture and balance assessment is performed during each visit to minimize compensatory movements.</p>
-        </div>
+    <h3>This is the default list page</h3>
+    {{range .Paginator.Pages}}
+      <div class="memberBox">
+        <h4>{{.Params.name}}</h4>
+        <a href="{{.URL}}" class="button">click</a>
       </div>
-    </section>
-    <section class="about-staff" id="staff">
-      <div class="widthWrap">
-        <h3>our experienced team</h3>
-        <div class="staffWrap">
-          {{range .Paginator.Pages}}
-            <div class="memberBox">
-              <img src="{{.Params.img_src}}" alt="{{.Params.img_alt}}" title="{{.Params.img_title}}">
-              <h4>{{.Params.name}}</h4>
-              <p>{{.Params.blurp}}</p>
-              <a href="{{.URL}}">read more</a>
-            </div>
-          {{end}}
-        </div>
-      </div>
-    </section>
-
-    <section class="about-blurp">
-      <h3>Our goal is to create a positive rehabilitative experience for each patient because we realize that your time is important and you have a choice where to receive your physical therapy</h3>
-      <a href="#" class="button">make an appointment</a>
-    </section>
-
-    {{ partial "footer" . }}
-
-    <!-- <div class="content">
-    </div> -->
-
-    <script type="text/javascript" src="/js/main.js"></script>
-
+    {{end}}
   </body>
 </html>
